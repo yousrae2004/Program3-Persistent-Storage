@@ -1,0 +1,27 @@
+# Save and Load Implementation
+
+## For my implementation of the save and load mechanic, I had the player move a square using the arrow keys and save their position by pressing 'S'. 
+Then, when you press play again and use the 'L' key, it will load your player back in the same position you saved. 
+
+## 3 Storage Mechanisms
+1. Unity PLayerPrefs
+Using input key-value pair storage built in the Unity engine.
+**Pros** Simple to implement since Unity already has this feature included.
+**Cons** Not practical to use for larger and more in-depth games that require more complicated mechanisms.
+I chose to use it because its simple and easy to use, especially for a simple task like storing
+the player's last saved position.
+
+2. JSON Serialization
+Saving data using a JSON file
+**Pros** Simple and easy to use and read, and can store complex data.
+**Cons** Need its own set up for file reading and since it is easily readable, this makes it a security issue.
+I mainly didn't use it since I haven't before and it would take some time to get used to, 
+especially with how it was mentioned that many people encountered errors during the lecture while using JSON.
+
+3. Custom Save File
+**Pros** More flexibility in choosing how to save and load your data
+**Cons** Can be time-consuming and complex to set up
+I didn't use this method because of the time-commitment and learning curve needed.
+
+## Link to Recording
+https://drive.google.com/file/d/1jEb3-ik5i5piQMvbQ1M3az4wcPWQZDwM/view?usp=sharing
